@@ -13,7 +13,7 @@ print ""
 dork = raw_input("Dork: ")
 def finder(dork):
     first = 1
-    while first<=91:
+    while first<=200:
         response = urllib2.urlopen("http://www.bing.com/search?q={}&first={}".format(dork, first))
         payload = response.read()
         results = re.findall('<h2><a(.*?)h="', payload)
